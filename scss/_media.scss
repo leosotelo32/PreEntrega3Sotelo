@@ -38,6 +38,15 @@
     row-gap: 20px;
 }
 
+.main__ca{
+    display: grid;
+    min-width: 299px;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+    align-items: center;
+    margin: 0%;
+}
+
     section{
         display: flex;
         flex-direction: column;

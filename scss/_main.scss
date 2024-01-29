@@ -144,3 +144,82 @@ main h1{
     align-items: center;
     justify-content: center;
 }
+
+.main__ca{
+    display: grid;
+    background:url(../img/fondo2carrito.jpg);
+    justify-content: center;
+    align-items:center;
+    min-width: 300px;
+    margin: 0%;
+    padding: 0%;
+    grid-template-columns:repeat(1, 1fr);
+
+    .cajon{
+        background-color:rgba(231, 226, 226, 0.952);
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        min-height: 600px;
+        min-width: 290px;
+        margin: 3% 30% 3% 30%;
+    }
+
+    .titulo{
+        background-color: rgba(240, 248, 255, 0);
+        display: flex;
+        justify-content:center;
+        align-items:center;
+        text-align: center;
+        min-width: 300px;
+    } 
+
+    h1{
+        @include fonth1;
+    }
+
+    .subt{
+        background-color:#D8B97D;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        min-width: 300px;
+        min-height: 30px;
+        margin: 0%;
+        padding: 0% 5% 0% 5%;
+        @include p;
+    }
+
+    .detalle{
+        background-color: rgba(240, 248, 255, 0.373);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0% 5% 0% 5%;
+        min-width: 300px;
+        @include p;
+    }
+
+    .total{
+        background-color: rgba(240, 248, 255, 0.373);
+        display: flex;
+        justify-content: space-between;
+        padding: 0% 5% 0% 5%;
+
+        min-width: 300px;
+        @include p;
+    }
+
+    button{
+        min-width: 200px;
+        background-color: rgb(179, 211, 222);
+        @include p;
+        border-radius: 3px;
+        margin-left: 50px;
+        
+        
+    }
+
+    }
+
+    

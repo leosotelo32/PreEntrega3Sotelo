@@ -7,76 +7,30 @@
     align-items: center;
     margin: 0%;
     padding: 0%;
+
+    .secturnos__sub{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .secturnos__sub p{
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+        margin: 2% 1% 10% 1%;
+        font-family:'Times New Roman', Times, serif;
+    }
+    
+    .secturnos__desc{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 0% 10% 0% 10%;
+        font-size: x-large;
+    }
 }
 
-.secturnos__sub p{
-    font-size: 20px;
-    font-weight: bold;
-    text-align: center;
-    margin: 2% 1% 10% 1%;
-    font-family:'Times New Roman', Times, serif;
-}
-
-.secturnos__sub{
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-.secturnos__desc{
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin: 0% 10% 0% 10%;
-}
-
-.agenda{
-    display: grid;
-    justify-content: center;
-    align-items: center;
-}
-
-.descripcion{
-    grid-area: descripcion;
-    min-height: 100px;
-    margin-top: 0%;
-}
-
-.boton{
-    justify-content: center;
-    align-items: center;
-    margin-left: 43%;
-}
-.secturnos{
-    display: grid;
-    grid-template-rows: repeat(1, 1fr);
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    margin: 0%;
-    padding: 0%;
-}
-
-.secturnos__sub p{
-    font-size: 20px;
-    font-weight: bold;
-    text-align: center;
-    margin: 2% 1% 10% 1%;
-    font-family:'Times New Roman', Times, serif;
-}
-
-.secturnos__sub{
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-.secturnos__desc{
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin: 0% 10% 0% 10%;
-}
 
 .agenda{
     display: grid;
@@ -355,7 +309,17 @@ section div p{
     align-items: center;
     justify-content: center;
     grid-area: info__contacto;
-    font-family: 'Times New Roman', Times, serif;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    border-style: groove;
+    border-width: 0 1px;
+    border-color: #fff;
+    transition: background .3s,border .3s,border-radius .3s,box-shadow .3s;
+    padding: 0;
+    background-color: #d2d9ea;
+
+    a{
+        @include anclas;
+    }
 }
 
 .info__redes{
@@ -363,7 +327,19 @@ section div p{
     align-items: center;
     justify-content: center;
     grid-area: info__redes;
-    font-family: 'Times New Roman', Times, serif;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    border-style: groove;
+    border-width: 0 1px;
+    border-color: #fff;
+    transition: background .3s,border .3s,border-radius .3s,box-shadow .3s;
+    padding: 0;
+    background-color: #d2d9ea;
+    color: #4e4e4e;
+    border-radius: 12px;
+
+    a{
+        @include anclas;
+    }
 }
 
 
@@ -373,4 +349,75 @@ section div p{
     align-items: center;
     justify-content: center;
     grid-area: info__mapa;
+}
+
+
+.agenda{
+justify-content: center;
+align-items: center;
+display: flex;
+}
+
+.agenda__btn{
+    background-color: rgb(113, 178, 113);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    min-width: 300px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.agenda__btn a{
+    display: flex;
+    text-decoration: none;
+}
+
+.agenda__btn__first img{
+    display: flex;
+    margin-right: 20px;
+}
+
+.agenda__btn__second{
+    display: flex;
+    color: white;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+}
+
+.agenda__btn__second p{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin: 0%;
+    transition: all 0.4s;
+}
+
+.agenda__btn__second p:hover{
+    font-size: x-large;
+    color:rgb(221, 221, 221);
+}
+
+.agenda__btn:hover{
+    height: 50px;
+    width: 380px;
+    background-color: rgb(48, 148, 49);
+    transform: scale(1.2);
+}
+
+.section .cajonera .section__cards .iconos:hover{
+    transform: scale(1.2);
+    transition: all 0.3s;
+}
+
+.box__one .box__in .box__link .box__tarjeta:hover{
+    transform: scale(1.2);
+    transition: all 0.3s;
+}
+
+.box__two .box__in .box__link .box__tarjeta:hover{
+    transform: scale(1.2);
+    transition: all 0.3s;
 }
