@@ -1,11 +1,13 @@
 
 .desktop{
+    display: flex;
     text-align: left;
     margin-left: 0%;
     height: 60px;
     width: 190px;
     justify-content: center;
     align-items: center;
+    margin-left: 5%;
 }
 
 .logoDesktop{
@@ -13,6 +15,6 @@
     align-items: center;
     display: flex;
     margin-top: 1%;
-    margin-left: 0%;
+    margin-left: 5%;
     margin-right: 25%;
 }

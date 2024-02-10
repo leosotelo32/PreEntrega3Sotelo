@@ -12,10 +12,10 @@ body {
 
 header {
   background-color: white;
+  display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  display: flex;
   text-decoration: none;
   position: sticky;
   top: 0;
@@ -25,12 +25,14 @@ header {
 }
 
 .desktop {
+  display: flex;
   text-align: left;
   margin-left: 0%;
   height: 60px;
   width: 190px;
   justify-content: center;
   align-items: center;
+  margin-left: 5%;
 }
 
 .logoDesktop {
@@ -38,20 +40,26 @@ header {
   align-items: center;
   display: flex;
   margin-top: 1%;
-  margin-left: 0%;
+  margin-left: 5%;
   margin-right: 25%;
 }
 
 /* MENÚ DE NAVEGACIÓN */
+.logoDesktop {
+  margin: 0%;
+}
+
 header nav ul {
-  display: inline-block;
+  display: flex;
   text-align: right;
+  justify-content: space-around;
 }
 
 header nav ul li {
   text-align: center;
-  display: inline-block;
-  padding: 1rem;
+  display: flex;
+  padding: 0% 1rem 0% 1rem;
+  justify-content: space-around;
 }
 
 header nav ul li a {
@@ -62,6 +70,12 @@ header nav ul li a {
 
 .navbar {
   background-color: #FFFFFF !important;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: 0%;
+  gap: 30%;
 }
 
 /* MAIN */
@@ -196,8 +210,46 @@ main h1 {
 
 .mainContacto {
   min-height: 500px;
-  align-items: center;
+  display: grid;
+}
+.mainContacto form {
+  display: grid;
   justify-content: center;
+  align-items: center;
+}
+.mainContacto h1 {
+  text-transform: uppercase;
+  color: black;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: x-large;
+  font-weight: bold;
+  text-align: center;
+  margin: 15% 0% 10% 0%;
+}
+.mainContacto input {
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mainContacto textarea {
+  display: grid;
+  min-width: 400px;
+}
+.mainContacto .submit {
+  width: 100px;
+  display: flex;
+  margin-left: 200px;
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
+.mainContacto .reset {
+  width: 100px;
+}
+.mainContacto .mapa {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .main__ca {
@@ -280,7 +332,7 @@ main h1 {
 }
 .main__ca button {
   min-width: 200px;
-  background-color: rgb(179, 211, 222);
+  background-color: rgba(179, 211, 222, 0);
   text-transform: uppercase;
   color: black;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -288,7 +340,24 @@ main h1 {
   font-weight: 600;
   text-align: center;
   border-radius: 3px;
-  margin-left: 50px;
+  margin: 20px;
+}
+
+.mainC {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mainC .mainC__items {
+  display: grid;
+  column-gap: 3%;
+  grid-template-columns: repeat(3, 1fr);
+}
+.mainC .card {
+  border-radius: 20px;
+}
+.mainC .card-img-top {
+  border-radius: 10px;
 }
 
 .secturnos {
@@ -517,17 +586,6 @@ section div p {
   fill: rgb(235, 235, 235);
 }
 
-.sectionContacto {
-  align-items: center;
-  justify-content: center;
-  min-height: 400px;
-}
-
-.mapaContacto {
-  justify-content: center;
-  align-items: center;
-}
-
 .info {
   display: grid;
   justify-content: center;
@@ -594,7 +652,7 @@ section div p {
   border-color: #fff;
   transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
   padding: 0;
-  background-color: #d2d9ea;
+  background-color: rgba(255, 255, 255, 0.3411764706);
 }
 .info__contacto a {
   text-decoration: none;
@@ -613,7 +671,7 @@ section div p {
   border-color: #fff;
   transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
   padding: 0;
-  background-color: #d2d9ea;
+  background-color: rgba(255, 255, 255, 0.3411764706);
   color: #4e4e4e;
   border-radius: 12px;
 }
@@ -703,26 +761,27 @@ section div p {
 
 footer {
   background-color: rgb(235, 235, 235);
-  min-height: 100px;
   justify-content: center;
   align-items: center;
+  margin: 0%;
   display: flex;
   text-align: center;
-  border-radius: -25px -25% 0% 0%;
+  border-radius: -25px -25px 0% 0%;
 }
 
 .footer-basic {
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  margin: 0%;
 }
 
-.copyright {
+p .copyright {
+  display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
 }
 
-@media (min-width: 330px) and (max-width: 600px) {
+@media (min-width: 320px) and (max-width: 480px) {
   header {
     display: flex;
     position: sticky;
@@ -793,6 +852,12 @@ footer {
     display: flex;
     flex-direction: column;
   }
+  .info__direccion {
+    margin: 0%;
+  }
+  .info__mapa {
+    display: none;
+  }
   footer {
     text-align: center;
     justify-content: center;
@@ -800,6 +865,143 @@ footer {
     display: flex;
     flex-direction: column;
   }
+}
+@media (min-width: 481px) and (max-width: 990px) {
+  header .barra {
+    display: grid;
+    width: 100%;
+  }
+  header .container-fluid {
+    display: grid;
+    grid-template-areas: "" "logo" "nav";
+  }
+  header .container-fluid .logoDesktop {
+    display: grid;
+    grid-area: logo;
+    margin: 0%;
+  }
+  header .container-fluid .navbar {
+    display: grid;
+    grid-area: nav;
+    margin-left: 0%;
+  }
+  .box__one {
+    display: flex;
+    column-gap: 0vw;
+  }
+  .box__two {
+    display: flex;
+    column-gap: 0vw;
+  }
+  .box__in {
+    width: 280px;
+  }
+  .mainC {
+    display: grid;
+  }
+  .mainC .mainC__items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    margin: 5% 0% 0% 25%;
+  }
+  .mainContacto {
+    display: grid;
+    grid-template-areas: "form" "mapa";
+    grid-template-columns: 1fr;
+  }
+  .mainos {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas: "titulo" "desc" "caja1" "caja2";
+  }
+  .mainos .mainos__caja1 {
+    display: grid;
+    grid-area: caja1;
+  }
+  .mainos .mainos__caja2 {
+    display: grid;
+    grid-area: caja2;
+  }
+  .mainos .mainos_titulo {
+    display: grid;
+    grid-area: titulo;
+  }
+  .mainos .mainos__desc {
+    display: grid;
+    grid-area: desc;
+  }
+  form {
+    grid-area: form;
+  }
+  form #nombre {
+    display: flex;
+    justify-content: center;
+    margin-left: 10%;
+  }
+  form #apellido {
+    display: flex;
+    justify-content: center;
+    margin-left: 10%;
+  }
+  form #correo {
+    display: flex;
+    justify-content: center;
+    margin-left: 10%;
+  }
+  .mapa {
+    display: grid;
+    grid-area: mapa;
+    margin: 10%;
+  }
+  .mainC {
+    flex-direction: column;
+  }
+  .info {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: "redes" "redes" "contacto" "contacto" "sede" "sede" "direccion" "direccion" "mapa" "mapa";
+    row-gap: 8%;
+  }
+  .info__redes {
+    display: grid;
+    grid-area: redes;
+    justify-content: center;
+    margin-left: 0%;
+    margin-top: 5%;
+  }
+  .info__contacto {
+    display: grid;
+    grid-area: contacto;
+  }
+  .info__sede {
+    display: grid;
+    grid-area: sede;
+  }
+  .info__direccion {
+    display: grid;
+    grid-area: direccion;
+    margin: 0%;
+  }
+  .info__mapa {
+    display: grid;
+    grid-area: mapa;
+    margin: 0%;
+  }
+}
+footer {
+  display: grid;
+  margin: 2%;
+}
+footer .footer-basic {
+  display: grid;
+  margin: 0%;
+  grid-template-areas: "p" "p" "p";
+}
+footer .footer-basic .copyright {
+  display: grid;
+  grid-template-areas: p;
 }
 
 /*# sourceMappingURL=estilos.css.map */

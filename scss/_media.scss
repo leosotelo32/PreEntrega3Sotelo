@@ -1,4 +1,6 @@
-@media (min-width:330px) and (max-width: 600px){
+//Media querie para mobile
+
+@media (min-width:320px) and (max-width: 480px){
 
     header{
         display: flex;
@@ -85,6 +87,14 @@
         flex-direction: column;
     }
 
+    .info__direccion{
+        margin: 0%;
+    }
+
+    .info__mapa{
+        display: none;
+    }
+    
     footer{
         text-align: center;
         justify-content: center;
@@ -93,3 +103,192 @@
         flex-direction: column;
     }
 }
+
+//Media querie para tablet
+
+@media (min-width:481px) and (max-width: 990px){
+
+    header{
+        
+        .barra{
+            display: grid;
+            width: 100%;
+        }
+
+    .container-fluid{
+        display: grid;
+    grid-template-areas: 
+    "" "logo" "nav";
+
+    .logoDesktop{
+        display: grid;
+        grid-area: logo;
+        margin: 0%;
+    }
+
+    .navbar{
+        display: grid;
+        grid-area: nav;
+        margin-left: 0%;
+    }
+    }
+}
+    .box__one{
+        display: flex;
+        column-gap: 0vw;
+
+    }
+
+    .box__two{
+        display: flex;
+        column-gap: 0vw;
+    }
+    .box__in{
+        width: 280px;
+    }
+
+    .mainC{
+        display: grid;
+
+        .mainC__items{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            margin: 5% 0% 0% 25%;
+        }
+    }
+
+    .mainContacto{
+        display: grid;
+        grid-template-areas: 
+        "form"
+        "mapa";
+        grid-template-columns: 1fr;
+    }
+
+    .mainos{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas: 
+        "titulo" 
+        "desc"
+        "caja1"
+        "caja2"
+        ;
+        
+
+    .mainos__caja1{
+        display: grid;
+        grid-area: caja1;
+    }
+
+    .mainos__caja2{
+        display: grid;
+        grid-area: caja2;
+    }
+
+    .mainos_titulo{
+        display: grid;
+        grid-area: titulo;
+    }
+
+    .mainos__desc{
+        display: grid;
+        grid-area: desc;
+    }
+}
+
+    form{
+        grid-area: form;
+
+        #nombre{
+            display: flex;
+            justify-content: center;
+            margin-left: 10%;
+        }
+
+        #apellido{
+            display: flex;
+            justify-content: center;
+            margin-left: 10%;
+        }
+
+        #correo{
+            display: flex;
+            justify-content: center;
+            margin-left: 10%;
+        }
+    }
+
+    .mapa{
+        display: grid;
+        grid-area: mapa;
+        margin: 10%;
+    }
+
+    .mainC{
+        flex-direction: column;
+    }
+
+        .info{
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            grid-template-areas: 
+            "redes" "redes"
+            "contacto" "contacto"
+            "sede" "sede"
+            "direccion" "direccion"
+            "mapa" "mapa";
+            row-gap: 8%;
+        }
+
+        .info__redes{
+            display: grid;
+            grid-area: redes;
+            justify-content: center;
+            margin-left: 0%;
+            margin-top: 5%;
+        }
+
+        .info__contacto{
+            display: grid;
+            grid-area: contacto;
+        }
+
+        .info__sede{
+            display: grid;
+            grid-area: sede;
+        }
+
+        .info__direccion{
+            display: grid;
+            grid-area: direccion;
+            margin: 0%;
+        }
+
+        .info__mapa{
+            display: grid;
+            grid-area: mapa;
+            margin: 0%;
+        }
+
+    }
+
+    footer{
+        display: grid;
+        margin: 2%;
+        
+        .footer-basic{
+            display: grid;
+            margin: 0%;
+            grid-template-areas: 
+            "p" "p" "p";
+
+        .copyright{
+            display: grid;
+            grid-template-areas: p;
+            
+        }
+        }
+    }

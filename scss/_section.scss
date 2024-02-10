@@ -234,17 +234,6 @@ section div p{
     fill: rgb(235, 235, 235);
 }
 
-.sectionContacto{
-    align-items: center;
-    justify-content: center;
-    min-height: 400px;
-}
-
-.mapaContacto{
-    justify-content: center;
-    align-items: center;
-}
-
 .info{   
     display: grid;
     justify-content: center;
@@ -315,7 +304,7 @@ section div p{
     border-color: #fff;
     transition: background .3s,border .3s,border-radius .3s,box-shadow .3s;
     padding: 0;
-    background-color: #d2d9ea;
+    background-color: #ffffff57;
 
     a{
         @include anclas;
@@ -333,7 +322,7 @@ section div p{
     border-color: #fff;
     transition: background .3s,border .3s,border-radius .3s,box-shadow .3s;
     padding: 0;
-    background-color: #d2d9ea;
+    background-color: #ffffff57;
     color: #4e4e4e;
     border-radius: 12px;
 
