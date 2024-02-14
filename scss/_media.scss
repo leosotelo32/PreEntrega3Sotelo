@@ -34,10 +34,36 @@
         font-size: 5vw;
     }
 
-.mainPys__items{
-    grid-template-rows: repeat(9, 1fr);
-    grid-template-columns: 1fr;
-    row-gap: 20px;
+    .mainPys{
+        display: grid;
+        margin: 0%;
+        justify-content: center;
+        grid-template-columns: repeat(1, 1fr);
+
+
+    .mainPys__items{
+        display: grid;
+        justify-content: center;
+        margin: 0%;
+        grid-template-rows: repeat(9, 1fr);
+        grid-template-columns:repeat(1, 1fr) ;
+    
+    .card{
+        display: grid;
+        margin-left: 10%;
+        justify-content: center;
+        grid-template-columns: repeat(1, 1fr)
+        
+        }
+        
+        .card-body{
+            margin: 2%;
+        }   
+
+    .btn-primary{
+        margin-top: 5%;
+    }
+    }
 }
 
 .main__ca{
@@ -48,6 +74,26 @@
     align-items: center;
     margin: 0%;
 }
+
+    .mainC{
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(1, 1fr);
+
+        .mainC__items{
+            display: grid;
+            justify-content: center;
+            grid-template-columns: repeat(1, 1fr);
+            margin: 10%;
+        }
+
+        .card{
+            display: grid;
+            justify-content: center;
+            margin: 10%;
+        }
+
+    }
 
     section{
         display: flex;
@@ -95,6 +141,119 @@
         display: none;
     }
     
+    .mainos{
+        display: grid;
+        margin: 0%;
+        margin-top: 0%;
+        gap: 0%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        grid-template-areas: 
+        "caja"
+        "titulo"
+        "desc";
+
+        .mainos__caja{
+            display: grid;
+            grid-area: caja;
+            margin: 0%;
+        }
+
+        .mainos__caja img{
+            display: grid;
+            margin: 0%;
+            padding: 0%;
+
+        }
+
+        .mainos__titulo{
+            display: grid;
+            grid-area: titulo;
+            margin-top: 5%;
+        }
+
+        .mainos__desc{
+            display: grid;
+            grid-area: desc;
+            margin: 0%;
+        }
+
+        .mainos__desc p{
+            display: grid;
+            margin: 12%;
+
+        }
+    }
+
+.main__ca{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+
+    .cajon{
+        display: grid;
+        margin: 0%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas: 
+        "titulo"
+        "subt"
+        "detalle"
+        "total"
+        "button";
+
+        .titulo{
+            display: grid;
+            grid-area: titulo;
+            }
+
+        .subt{
+            display: flex;
+            grid-area: subt;
+        }
+
+        .detalle{
+            display: flex;
+            grid-area: detalle;
+        }
+
+        .total{
+            display: flex;
+            grid-area: total;
+        }
+
+        button{
+            display: grid;
+            grid-area: button;
+        }
+    }
+}
+.mainContacto{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: 
+    "form"
+    "mapa";
+
+    form{
+        display: grid;
+        grid-area: form;
+    }
+
+    input{
+        margin-left: 5%;
+    }
+
+    textarea{
+        margin: 5%;
+        width: 100px;
+    }
+
+    .mapa{
+        display: grid;
+        grid-area: mapa;
+    }
+}
+
     footer{
         text-align: center;
         justify-content: center;
@@ -108,40 +267,87 @@
 
 @media (min-width:481px) and (max-width: 990px){
 
-    header{
-        
-        .barra{
-            display: grid;
-            width: 100%;
-        }
+header{
 
     .container-fluid{
         display: grid;
-    grid-template-areas: 
-    "" "logo" "nav";
+        grid-template-areas: 
+        "nav logo";
 
-    .logoDesktop{
-        display: grid;
-        grid-area: logo;
-        margin: 0%;
-    }
+        .logoDesktop{
+            display: grid;
+            grid-area: logo;
+            margin: 0%;
+        }
 
-    .navbar{
-        display: grid;
-        grid-area: nav;
-        margin-left: 0%;
-    }
+        .navbar{
+            display: grid;
+            grid-area: nav;
+            margin-left: 0%;
+        }
     }
 }
+main.container-fluid{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    margin: 0%;
+    padding: 0%;
+    grid-template-areas: 
+    "carousel"
+    "titulado";
+
+    .carousel{
+        display: grid;
+        grid-area: carousel;
+    }
+
+.titulado{
+        display: grid;
+        grid-area: titulado;
+
+    .encabezado{
+
+        h1{
+            font-size: x-large;
+            font-weight:600;
+            margin-top: 10%;
+            color: rgb(95, 103, 109);
+            background-color: rgba(255, 255, 255, 0.396);
+        }
+    }
+
+    .descripcion{
+
+            h2{ 
+                font-weight: 400;
+                font-size:x-large;
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                color: rgb(95, 103, 109);
+                background-color: rgba(255, 255, 255, 0.396);
+                }
+            }
+        }
+    }
+
+
     .box__one{
-        display: flex;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
         column-gap: 0vw;
+        gap: 1rem;
+        padding: 0px 12px;
 
     }
 
     .box__two{
-        display: flex;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
         column-gap: 0vw;
+        margin-top: 7%;
+        gap: 1rem;
     }
     .box__in{
         width: 280px;
@@ -168,23 +374,20 @@
 
     .mainos{
         display: grid;
+        margin: 0%;
         grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        gap: 4rem;
         grid-template-areas: 
-        "titulo" 
+        "caja" 
+        "titulo"
         "desc"
-        "caja1"
-        "caja2"
         ;
         
 
-    .mainos__caja1{
+    .mainos__caja{
         display: grid;
-        grid-area: caja1;
-    }
-
-    .mainos__caja2{
-        display: grid;
-        grid-area: caja2;
+        grid-area: caja;
     }
 
     .mainos_titulo{
@@ -195,8 +398,31 @@
     .mainos__desc{
         display: grid;
         grid-area: desc;
+        background-color: rgba(255, 255, 255, 0.736);
+        border-radius: 5%;
+
+        p{
+            font-size: large;
+            font-weight: 500;
+            margin: 3%;
+        }
     }
 }
+
+    .mainPys{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin: 0%;
+
+        .mainPys__items{
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            gap: 1%;
+            margin-left: 15%;
+            grid-template-rows: repeat(10, 1fr);
+            
+        }
+    }
 
     form{
         grid-area: form;
@@ -228,6 +454,7 @@
 
     .mainC{
         flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.105);
     }
 
         .info{
@@ -235,11 +462,11 @@
             grid-template-columns: repeat(1, 1fr);
             grid-template-rows: repeat(3, 1fr);
             grid-template-areas: 
-            "redes" "redes"
-            "contacto" "contacto"
-            "sede" "sede"
-            "direccion" "direccion"
-            "mapa" "mapa";
+            "redes redes"
+            "contacto contacto"
+            "sede sede"
+            "direccion direccion"
+            "mapa mapa";
             row-gap: 8%;
         }
 
@@ -277,18 +504,20 @@
 
     footer{
         display: grid;
-        margin: 2%;
+        margin: 5%;
         
         .footer-basic{
             display: grid;
             margin: 0%;
             grid-template-areas: 
-            "p" "p" "p";
+            "p";
 
         .copyright{
             display: grid;
             grid-template-areas: p;
-            
-        }
+            margin-top: 50%;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            background-color:rgb(219, 219, 219);
         }
     }
+}
